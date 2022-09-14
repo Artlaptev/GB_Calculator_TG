@@ -1,18 +1,14 @@
 import re
 
-
 def write_line(a):
     print(a)
-
 
 def in_txt(a):
     return input(a)
 
-
 class OwnError(Exception):
     def __init__(self, txt):
         self.txt = txt
-
 
 def in_comp(a):
     i = 0
@@ -26,7 +22,6 @@ def in_comp(a):
             write_line(err)
         else:
             return inp_data
-
 
 def in_int(a):
     i = 0
@@ -42,7 +37,6 @@ def in_int(a):
             write_line(err)
         else:
             return inp_data
-
 
 def in_act():
     act_list = ['-', '+', '*', '/']
