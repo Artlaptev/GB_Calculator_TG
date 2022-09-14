@@ -1,7 +1,6 @@
 from calculations import div, mult, diff, sum
 from my_ui import write_line
 
-
 def integer(act, num1, num2):
     if act == "+":
         write_line(sum(num1, num2))

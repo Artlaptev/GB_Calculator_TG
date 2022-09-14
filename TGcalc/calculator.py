@@ -2,11 +2,11 @@
 # организовать меню, добавив в неё систему логирования.
 
 from draw_board import draw_board
+from my_ui import in_txt, in_int, in_act, in_comp
+from my_ui import write_line
 from integer import integer
 from calc_fraction import calc_fraction
-from my_ui import write_line, in_txt, in_int, in_act, in_comp
 from complex_num import complex_num
-from logs_file import logs_file
 
 def simple_calc():
     draw_board()
@@ -40,9 +40,9 @@ def simple_calc():
             with open("logs_file.txt", "a", encoding="utf-8") as f:
                 f.write(f"комплексное число {str(complex_num(comp_first, comp_two, comp_act))}\n")
         else:
-            write_line("Жмакай 'I' или 'R' или 'C'")
+            write_line("Нажми 'I' или 'R' или 'C'")
         while True:
-            f = in_txt('ещё раз?\n')
+            f = in_txt('Eщё раз? Для продолжения введите y, для выхода введите n\n')
             if f == 'y':
                 simple_calc()
             elif f == 'n':
@@ -50,6 +50,5 @@ def simple_calc():
                 exit()
             else:
                 write_line("Выберите "'y'" или "'n'"")
-
 
 simple_calc()
