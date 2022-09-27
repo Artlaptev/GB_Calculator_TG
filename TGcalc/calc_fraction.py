@@ -5,10 +5,10 @@ from fractions import Fraction
 
 def calc_fraction(act, a, b, c, d):
     if act == "+":
-        write_line(sum(Fraction(a, b), Fraction(c, d)))
+        return sum(Fraction(a, b), Fraction(c, d))
     elif act == "-":
-        write_line(diff(Fraction(a, b), Fraction(c, d)))
+        return diff(Fraction(a, b), Fraction(c, d))
     elif act == "*":
-        write_line(mult(Fraction(a, b), Fraction(c, d)))
+        return mult(Fraction(a, b), Fraction(c, d))
     elif act == "/":
-        write_line(div(Fraction(a, b), Fraction(c, d)))
+        return div(Fraction(a, b), Fraction(c, d))

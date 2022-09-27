@@ -6,7 +6,7 @@ from integer import integer
 from calc_fraction import calc_fraction
 from my_ui import write_line, in_txt, in_int, in_act, in_comp
 from complex_num import complex_num
-from logs_file import logs_file
+
 
 def simple_calc():
     draw_board()
